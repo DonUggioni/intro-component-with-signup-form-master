@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
+    <script
+      defer
+      src="https://kit.fontawesome.com/6bde658781.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/script.js"></script>
     <link
       rel="icon"
       type="image/png"
@@ -14,8 +20,6 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Frontend Mentor | Intro component with sign up form</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
     <main class="main">
@@ -34,26 +38,69 @@
             $20/mo. thereafter
           </p>
         </div>
+
         <form action="/" class="form" id="form">
-          <input type="text" id="name" class="name" placeholder="First Name" />
-          <input
-            type="text"
-            id="last__name"
-            class="last__name"
-            placeholder="Last Name"
-          />
-          <input
-            type="email"
-            id="email"
-            class="email"
-            placeholder="Email Address"
-          />
-          <input
-            type="text"
-            id="password"
-            class="password"
-            placeholder="Password"
-          />
+          <div class="input__group">
+            <i class="fa-solid fa-circle-exclamation error__icon"></i>
+            <i
+              class="fa-solid fa-circle-check success__icon success__icon--hidden"
+            ></i>
+            <input
+              type="text"
+              id="name"
+              class="name"
+              placeholder="First Name"
+            />
+            <p class="message"></p>
+          </div>
+
+          <div class="input__group">
+            <i
+              class="fa-solid fa-circle-exclamation error__icon error__icon--hidden"
+            ></i>
+            <i
+              class="fa-solid fa-circle-check success__icon success__icon--hidden"
+            ></i>
+            <input
+              type="text"
+              id="last__name"
+              class="last__name"
+              placeholder="Last Name"
+            />
+            <p class="message"></p>
+          </div>
+
+          <div class="input__group">
+            <i
+              class="fa-solid fa-circle-exclamation error__icon error__icon--hidden"
+            ></i>
+            <i
+              class="fa-solid fa-circle-check success__icon success__icon--hidden"
+            ></i>
+            <input
+              type="email"
+              id="email"
+              class="email"
+              placeholder="Email Address"
+            />
+            <p class="message"></p>
+          </div>
+
+          <div class="input__group">
+            <i
+              class="fa-solid fa-circle-exclamation error__icon error__icon--hidden"
+            ></i>
+            <i
+              class="fa-solid fa-circle-check success__icon success__icon--hidden"
+            ></i>
+            <input
+              type="text"
+              id="password"
+              class="password"
+              placeholder="Password"
+            />
+            <p class="message"></p>
+          </div>
           <button type="submit" id="btn" class="btn">
             claim your free trial
           </button>
