@@ -21,6 +21,12 @@ const validateForm = function () {
     displaySuccess(firstNameEL, 'Success!');
   }
   // Last name
+  if (lastNameEL.value.trim() === '') {
+    displayError(lastNameEL, 'Last Name cannot be empty');
+  } else {
+    displaySuccess(lastNameEL, 'Success!');
+  }
+
   // Email
   // Password
 };
@@ -31,7 +37,6 @@ const displayError = function (element, message) {
     parentEl.classList.remove('input__group--success');
   }
   parentEl.classList.add('input__group--error');
-
   messageEL.textContent = message;
 };
 
