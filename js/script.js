@@ -7,8 +7,8 @@ const emailEL = document.getElementById('email');
 const passwordEL = document.getElementById('password');
 
 formEL.addEventListener('submit', function (e) {
-  validateForm();
   e.preventDefault();
+  validateForm();
 });
 
 const validateForm = function () {
@@ -27,7 +27,7 @@ const validateForm = function () {
   }
 
   // Email
-  if (emailEL.value.toLowerCase().trim() === '') {
+  if (emailEL.value === '') {
     displayError(emailEL, 'Email cannot be empty');
   } else if (checkEmail(emailEL.value)) {
     displaySuccess(emailEL, 'Success!');

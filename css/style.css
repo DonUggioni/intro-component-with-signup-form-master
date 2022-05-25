@@ -146,16 +146,6 @@ body {
   font-weight: 600;
 }
 
-/* Attribution */
-.attribution {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 2%;
-  font-size: 11px;
-  text-align: center;
-}
-
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
@@ -225,4 +215,14 @@ body {
 .input__group--success .message {
   color: var(--green);
   visibility: visible;
+}
+
+/* Attribution */
+.attribution {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2%;
+  font-size: 11px;
+  text-align: center;
 }
